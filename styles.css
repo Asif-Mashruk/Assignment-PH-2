@@ -1,0 +1,103 @@
+/* Shared style */
+*{
+    box-sizing: border-box;
+    background-color: rgb(245, 248, 255);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Navbar related style */
+.navbar{
+    display: flex;
+    justify-content:space-between ;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    margin: 20px auto;
+}
+.nav-img{
+    max-width: 100%;
+    margin: 0 10px;
+}
+.nav-items{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 10px 0;
+}
+.nav-item{
+    list-style: none;
+   
+
+}
+.nav-item a{
+    text-decoration: none;
+    color: rgb(37, 36, 50);
+    font-weight: 700;
+}
+#shop{
+    color: rgb(137, 135, 161);
+}
+#about-us{
+    color: rgb(137, 135, 161);
+}
+/* fresh flower section related style */
+.fresh-flower-section{
+    display: flex;
+    height: 600px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.fresh-flower-section-title{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+#fresh-flowers{
+    color: rgb(233, 90, 8);
+}
+.fresh-flower-section-description{
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    /* margin-top: 10px; */
+}
+.fresh-flower-image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:576px){
+    .navbar{
+        width: 100%;
+    }
+    .nav-item{
+        max-width: 100%;
+        text-wrap: nowrap;
+
+    }
+    .group-item{
+        display: none;
+    }
+    .fresh-flower-section{
+        flex-direction: column-reverse;
+        width: 100%;
+        
+    }
+    .fresh-flower-image{
+        width: 100%;
+    }
+    .fresh-flower-section-left{
+        width: 100%;
+    }
+}
