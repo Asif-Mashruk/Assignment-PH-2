@@ -115,6 +115,43 @@ img{
     width: 100%;
     margin-top: 10px;
 }
+/* plant lover section related styles */
+.plants-lover-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 150px;
+}
+.plants-lover-section-left{
+    background-image: url("./assets/flower-store.png");
+    background-image: 100%;
+    flex: 1;
+    /* object-fit: cover; */
+    height: 500px;
+}
+.plants-lover-section-right{
+    width: 40%;
+    margin-top: -20px;
+}
+.plant-section-img{
+    height: 250px;
+    width: 250px;
+    background: none;
+    margin-left: 420px;
+    margin-top: -120px;
+}
+.plants-lover-section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+.plants-lover-section-description{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+
+}
 
 @media screen and (max-width:576px){
     .navbar{
@@ -136,10 +173,26 @@ img{
     .fresh-flower-image{
         width: 100%;
     }
-    .fresh-flower-section-left{
+    .fresh-flower-section-left {
         width: 100%;
+        
+
+        ;
     }
     .our-plants-container{
         grid-template-columns: repeat(2,1fr);
     }
-}
+    .plants-lover-section{
+        flex-direction: column;
+        
+    }
+    .plant-section-img{
+        margin: 0;
+        visibility: hidden;
+    }
+    .plants-lover-section-left{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
