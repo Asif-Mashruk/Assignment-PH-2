@@ -152,6 +152,109 @@ img{
     color: rgba(0, 0, 0, 0.5);
 
 }
+/* latest deals section related style */
+.latest-deals-section{
+    text-align: center;
+    margin-top: 120px;
+}
+.latest-deals-section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+#latest{
+    color: rgb(233, 90, 8);
+}
+.latest-deals-section-description{
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+/* offer section related styles */
+.offer-section{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 700px;
+    margin-top: 100px;
+}
+.offer-section img{
+    border-radius:20px;
+    width: 100%;
+}
+.offer-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 30%;
+}
+.offer-section-right{
+    flex: 1;
+}
+.content{
+   margin-top: -100px;
+   text-align: center;
+}
+.content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
+.card{
+    height: auto;
+}
+.content-zabo{
+    margin-top: -250px;
+    text-align: center;
+}
+.content-zabo h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(245, 248, 255);
+}
+.offer-section a{
+    font-size: 1.5rem;
+    color: rgb(245, 248, 255);
+    text-decoration: underline;
+    background: transparent;
+
+}
+/* join section related styles */
+.join-section-container{
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.join-section-container h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+.join-section-container input{
+    width: 650px;
+    height: 50px;
+}
+.join-section-container input ::placeholder{
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.join-section-container button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(233, 90, 8);
+    margin-left: 10px;
+}
+
 
 @media screen and (max-width:576px){
     .navbar{
@@ -196,3 +299,13 @@ img{
         background-repeat: no-repeat;
         background-position: center;
     }
+    .offer-section{
+        flex-direction: column;
+    }
+    .offer-section-left{
+        width: 100%;
+    }
+    .offer-section-right{
+        margin-top: 30px;
+    }
+}    
