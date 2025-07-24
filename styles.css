@@ -146,6 +146,7 @@ img{
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(0, 0, 0);
+    
 }
 .plants-lover-section-description{
     font-size: 1.5rem;
@@ -233,6 +234,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 .join-section-container h1{
     font-size: 3rem;
@@ -253,6 +255,30 @@ img{
     height: 50px;
     background-color: rgb(233, 90, 8);
     margin-left: 10px;
+}
+.footer{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0;
+}
+.footer-fourth{
+    margin-top: -50px;
+    margin-left: 20px;
+}
+.footer-fourth img{
+    margin: 10px;
+}
+.footer-first p{
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-list li{
+    list-style: none;
+    font-size: 1.25rem;
+    color: rgb(107, 114, 128);
 }
 
 
@@ -287,6 +313,9 @@ img{
     }
     .plants-lover-section{
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
         
     }
     .plant-section-img{
@@ -307,5 +336,20 @@ img{
     }
     .offer-section-right{
         margin-top: 30px;
+    }
+    .join-section-container img{
+        width: 100%;
+
+        
+    }
+    .join-section-container input{
+        width: 100%;
+    }
+    .join-section-input{
+        display: flex;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }    
